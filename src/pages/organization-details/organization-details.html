@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{organization?.login}}'s details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <ion-list>
+    <ion-item>
+      <ion-label>Followers</ion-label>
+      <ion-badge item-right>{{organizationDetails?.followers}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Following</ion-label>
+      <ion-badge item-right>{{organizationDetails?.following}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Repos</ion-label>
+      <ion-badge item-right>{{organizationDetails?.public_repos}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Gists</ion-label>
+      <ion-badge item-right>{{organizationDetails?.public_gists}}</ion-badge>
+    </ion-item>
+  </ion-list>    
+</ion-content>
